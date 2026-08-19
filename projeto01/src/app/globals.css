@@ -1,0 +1,93 @@
+body{
+background-color: rgb(38, 187, 130);  
+margin: 0;
+}
+/*HEADER*/
+nav{
+  background-color: white;
+  padding: 25px;
+  display: flex;
+ 
+}
+.logo{
+  width: 250px;
+  height: 50px;
+  margin-left: 170px;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+.nav-box ul{
+  display: flex;
+  gap: 90px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.nav-box li a{
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav02{
+  display: flex;
+  text-decoration: none;
+}
+.nav02 img{
+  width: 20px;
+  height: 20px;
+}
+/*info escritas*/
+.conteiner-pai{
+  width: 500px;
+  height: 700px;
+  margin-left: 200px;
+  margin-top: 80px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+.box01{
+  background-color: aqua;
+ width: 500px;
+ height: 200px;
+ font-size: 80px;
+}
+
+.box02{
+  background-color: brown;
+  width: 400px;
+  height: 150px;
+  font-size: 30px;
+}
+
+
+
+/*DIVs de info*/
+.profissional{
+  width: 500px;
+  height: 800px;
+  margin-left: 450px;
+  position: relative;
+  bottom: 300px;
+}
+
+
+.container{
+  width: 70vw;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  min-height: 90vh;
+
+}
+
+.face{
+  width: 200px;
+  height: 200px;
+}
