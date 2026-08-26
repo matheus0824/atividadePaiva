@@ -1,8 +1,7 @@
 .card-wrap{
-    display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
+    padding: 80px;
     border-radius: 25px;
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
@@ -10,5 +9,5 @@
 
 .card-wrap img {
     height: auto;
-    width: 500px;
+    width: 700px;
 }
