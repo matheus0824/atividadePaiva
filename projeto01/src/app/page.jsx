@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import BannerCTA from "@/components/bannerCTA";
+import Header from "@/components/header";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -7,10 +9,11 @@ export default async function Home() {
 
   await sleep(3500);
 
-  throw new Error("Erro simulado!");
+//  throw new Error("Erro simulado!");
 
   return (
   <>
+
      <div className="conteiner-pai">
 
         <div>
@@ -25,8 +28,11 @@ export default async function Home() {
         
       <div>
             <img className="profissional" src="/imagens/Profissional.png" />
-        </div>
     </div>
+
+        </div> 
+        <BannerCTA/>
+        <Header/>
   </>
   );
 }

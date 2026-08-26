@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
           <nav>
 
             <div>
-              <img className="logo" src="/imagens/Unbounce_Logo.png" alt="logo" />
             </div>
 
               <ul>
@@ -38,15 +37,10 @@ export default function RootLayout({ children }) {
               <li><Link href={'/contact'}>Contact</Link></li>  
             </ul>
 
-            <div className="nav02">
-              <img src="\imagens\busca.png" alt="" />
-              <Link href={'/login'}>Log in</Link>
-              
-            </div>
+           
             <div>
               
             </div>
-            <Link href={'/'}>Star My free Trial</Link>
             
         </nav>
         </div>
