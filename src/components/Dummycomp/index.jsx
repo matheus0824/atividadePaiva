@@ -1,9 +1,8 @@
-'use client';
+import { dados } from "./function";
+import './dummycss.css';
 
-import { useDados } from "./function";
-import '@/components/Dummycomp/dummycss.css';
 export default function Dummy() {
-  const { lista, msgErro } = useDados();
+    const { lista, msgErro } = dados()
 
     return (
         <main className="mainDum">

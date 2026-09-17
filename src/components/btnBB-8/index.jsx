@@ -50,7 +50,7 @@ const StyledWrapper = styled.div`
     --toggle-size: 16px;
     /* finally I removed the scale now everything depends on the font-size */
     /* --margin-top-for-head: 1.75em; */
-    /* it's just in case 👆 */
+    /* it's just in case  */
     --toggle-width: 10.625em;
     --toggle-height: 5.625em;
     --toggle-offset: calc((var(--toggle-height) - var(--bb8-diameter)) / 2);
