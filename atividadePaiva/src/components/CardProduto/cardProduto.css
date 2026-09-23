@@ -1,0 +1,20 @@
+.card-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #333;
+    color: black;
+}
+
+/* .card-wrap:hover{
+    transform: translateY(-3px);
+    box-shadow: 2px 5px 30px #33333349;
+} */
+
+.card-wrap img{
+    height: auto;
+    width: auto;
+}

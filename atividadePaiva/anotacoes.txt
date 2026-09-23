@@ -1,0 +1,45 @@
+Interpretadores de Códigos.
+
+V8 - chrome
+Node - um v8 de forma diferente
+Bun - num sei
+
+TypeCasting é qnd se padroniza os tipos dos números p um objetivo.
+
+Node é JavaScript p servidor.
+npm - node packge menager. "qm baixa uma biblioteca é esse, ou da o update"
+npx - node packge executor. "qm executa é esse aq"
+
+"create-next-app projeto01"
+
+turbopack transforma file html,css,js em file q o navegador consegue ler. Turbopack é um bundler
+
+npm install, por si só baixa todas as pendencias de "package.json"
+
+Eslint
+
+npm run dev - n precisa dar f5
+npm run build
+npm start - modo de produção
+
+ctrl + shft + v
+
+Dois arquivos page.jsx na mesma pasta no podem coexistir
+Somente um page.jsx por vez
+arquivos layouts se sobrepoem, dentro dele só vai aparecer um 'page.jsx'
+
+qnd criar componemtes eu posso criar a pasta com o nome do componente e dentro colocar o index.jsx, e seu css
+
+hook, aparece dps da versão de react versão 16.8
+
+ssr -> server side rendering - manda
+csr -> client side rendering - recebe
+
+servidores n conseguem rodar hooks, p rederiza-los precisamos usar 'use client'. E isso faz usar a redenrização do meu user
+
+useEffect: um dos jeito q usamos é qnd queremos monitorar uma variavél
+->
+o ciclo de useEfecct começa qnd a tela carrega
+
+o ciclo é:
+nasc,altera,die

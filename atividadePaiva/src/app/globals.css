@@ -1,0 +1,133 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  /* color: blue;
+  text-decoration: underline; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2a2a2a;
+}
+
+main{
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue ;
+  position: relative;
+  z-index: 1;
+}
+
+main .box{
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content:  center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  /* margin-left: 3rem;
+  margin-top: 3rem; */
+}
+
+main .box p{
+  max-width: 300px;
+}
+
+main .box button{
+  padding: 12px;
+  border: rgb(0, 0, 0) 2px solid;
+  background-color: #171717;
+  color: #ffffff;
+  transition: transform .2s ease-in-out;
+}
+
+.png img{
+  width: 800px;
+  height: auto;
+}
+
+/* not-found */
+
+.conteiner{
+  width: 100%;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  flex-direction: column  ;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.face{
+  width: 200px;
+  height: 200px;
+}
+
+.container-filmes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 85vw;
+  margin: auto;
+}
+
+.wrap-filme{
+  border-radius: 25px;
+  padding: 10px;
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrap-filme img{
+  height: auto;
+  width: 300px;
+}
+
+
+
+
+
+.container-receitas{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 85vw;
+  margin: auto;
+}
+
+.wrap-receitas{
+  border-radius: 25px;
+  padding: 10px;
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrap-receitas img{
+  height: auto;
+  width: 300px;
+}
