@@ -1,0 +1,20 @@
+.ConteinerFluid{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: thistle;
+    color: azure;
+    font-weight: bold;
+    padding: 5rem 3.5rem;
+    margin: 10rem 0;
+    /* width: 100%; */
+}
+
+.buttonCta{
+    padding: 8px 12px;
+    background-color: cornsilk;
+    border-radius: 25px;
+    color: #333;
+    border: 1px solid #fff;
+}

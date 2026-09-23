@@ -1,0 +1,13 @@
+section{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 12px;
+}
+
+button:hover{
+  transform: scale(1.05);
+  box-shadow: 7px 5px 5px;
+}

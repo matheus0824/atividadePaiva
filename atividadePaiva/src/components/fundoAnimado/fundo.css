@@ -1,0 +1,60 @@
+.fundo {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 70% 15%, rgba(56, 86, 219, 0.7), transparent 20%),
+        radial-gradient(circle at 25% 80%, rgba(255, 240, 32, 0.55), transparent 20%),
+        radial-gradient(circle at 50% 50%, rgba(150, 150, 150, 0.18), transparent 30%),
+        #050505;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.fundo::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background-image: radial-gradient(#ffffff22 1px, transparent 1px);
+    background-size: 42px 42px;
+    transform: rotate(8deg);
+    animation: gridMove 12s linear infinite;
+}
+
+.fundo::after {
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 240, 32, 0.45);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 80px rgba(56, 86, 219, 0.65), 0 0 80px rgba(255, 240, 32, 0.2);
+}
+
+.mascara {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: min(560px, 42vw);
+    height: min(560px, 42vw);
+    min-width: 260px;
+    min-height: 260px;
+    border-radius: 34% 41% 44% 37%;
+    background:
+        linear-gradient(135deg, rgba(56, 86, 219, 0.82), rgba(255, 240, 32, 0.8));
+    filter: blur(12px) saturate(125%);
+    opacity: 0.9;
+    box-shadow: 0 0 80px rgba(255, 240, 32, 0.45), 0 0 150px rgba(56, 86, 219, 0.6);
+    border: 1px solid rgba(255,255,255,0.45);
+}
+
+@keyframes gridMove {
+    from {
+        transform: translate3d(0, 0, 0) rotate(8deg);
+    }
+    to {
+        transform: translate3d(50px, -50px, 0) rotate(8deg);
+    }
+}

@@ -1,0 +1,14 @@
+.card-conteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 450px);
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.conteiner{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
