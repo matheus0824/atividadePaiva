@@ -1,28 +1,35 @@
 'use client';
-import Receitas from "@/components/cardsreceitas"
-import { useState, useEffect } from "react";
 
-export function receitas() {
-  const [lista, setListaReceitas] = useState([]);
-  const [msgErro, setMsgErro] = useState("");
+import { useState, useEffect } from 'react';
+import CardReceita from '@/components/cardReceitas';
+
+export default function ReceitasPage() {
+  const [listaReceitas, setListaReceitas] = useState([]);
+  const [msgErro, setMsgErro] = useState('');
 
   useEffect(() => {
     fetch('https://dummyjson.com/recipes')
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setListaReceitas(data.recipes);
-        setMsgErro("");
+        setMsgErro('');
       })
-      .catch(e => setMsgErro(e.message));
+      .catch((e) => setMsgErro(e.message));
   }, []);
 
-return (
-        <main>
-            <h1>Pagina de Usuários</h1>
-            {msgErro != "" && <p>Erro:{msgErro}</p>}
-          
-
-          return 
-          </main>
-    )
+  return (
+    <main style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto' }}>
+      <h1 style={{ fontSize: '2rem', marginBottom: '24px', textAlign: 'center' }}>Lista de Receitas</h1>
+      
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+        gap: '20px'
+      }}>
+        {listaReceitas.map((receita) => (
+          <CardReceita key={receita.id} receita={receita} />
+        ))}
+      </div>
+    </main>
+  );
 }
